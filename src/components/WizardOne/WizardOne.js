@@ -5,7 +5,7 @@ import {updateLoanType, updatePropertyType} from '../../ducks/reducer';
 
 class WizardOne extends Component {
     render(){
-        const {loanType, propertyType}=this.props;
+        const { updateLoanType, updatePropertyType } = this.props;
         return(
             <div className="parent-div">
                 <div className="vert-align">
