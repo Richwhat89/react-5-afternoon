@@ -36,7 +36,8 @@ const UPDATE_EMAIL = "UPDATE_EMAIL";
 export default function reducer(state=initialState, action){
     switch(action.type){
         case UPDATE_LOAN_TYPE:
-            return Object.assign({}, state, {loanType: action.payLoad});
+        console.log(action.payload)
+            return Object.assign({}, state, {loanType: action.payload});
 
         case UPDATE_PROPERTY_TYPE:
             return Object.assign({}, state, {propertyType: action.payload});

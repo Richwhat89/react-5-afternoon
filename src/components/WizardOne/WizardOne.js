@@ -11,7 +11,7 @@ class WizardOne extends Component {
                 <div className="vert-align">
                     <p>What type of loan will you be needing?</p> <br />
                 
-                    <select onChange={(e)=> updateLoanType(e.target.value)}>
+                    <select onChange={(e)=> console.log(e.target.value) ||  updateLoanType(e.target.value)}>
 
                         <option type="text" value="Home Purchase" >Home Purchase</option>
                         <option type="text" value="Refinance" >Refinance</option>
